@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Our custom CSS -->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="html" href="Gallery_index.html">
+    <title>Space Exploration Website</title>
+    <script src="navigation.js" defer></script>
+  </head>
+  <body class="home">
+    <a class="skip-to-content" href="#main">Skip to content</a>
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="./assets/home/space_video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <header class="primary-header flex">
+      <div>
+        <img
+          src="./assets/shared/logo.svg"
+          alt="space tourism logo"
+          class="logo"
+        />
+      </div>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+        <span class="sr-only" aria-expanded="false">Menu</span>
+      </button>
+      <nav>
+        <ul
+          id="primary-navigation"
+          data-visible="false"
+          class="primary-navigation underline-indicators flex"
+        >
+          <li class="active">
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="index.html"
+              ><span aria-hidden="true"></span>Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="solarsystem.html"
+              ><span aria-hidden="true"></span>Solar System</a
+            >
+          </li>
+          <li>
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="missions.html"
+              ><span aria-hidden="true"></span>Missions</a
+            >
+          </li>
+          <li>
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="Gallery_index.html"
+              ><span aria-hidden="true"></span>Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="Quiz.html"
+              ><span aria-hidden="true"></span>Quiz</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" class="grid-container grid-container--home">
+      <div>
+        <h1 class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">
+          So, you want to travel to
+          <span class="d-block fs-900 ff-serif text-white">Space</span>
+        </h1>
+
+        <p>
+         <h3>Strap in for the ultimate escape – a journey to the final frontier.
+           Explore the depths of space, where weightlessness is your companion,
+            and the beauty of the universe unfolds in a mesmerizing dance of galaxies and constellations.
+        </h3>
+        </p>
+      </div>
+      <div>
+        <a href="solarsystem.html" class="large-button uppercase ff-serif text-dark bg-white"
+          >Explore</a
+        >
+      </div>
+    </main>
+  </body>
+</html>
